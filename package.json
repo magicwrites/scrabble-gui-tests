@@ -1,0 +1,16 @@
+{
+  "name": "scrabble-gui-tests",
+  "version": "0.0.0",
+  "description": "tests",
+  "main": "tests.js",
+  "scripts": {
+    "install": "(npm install webdriverio -g) && (npm install selenium-standalone -g)",
+    "test": "wdio wdio.conf.js",
+    "start": "selenium-standalone start"
+  },
+  "author": "Maciej Mazur",
+  "license": "none given",
+  "dependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
