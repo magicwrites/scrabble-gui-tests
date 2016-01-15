@@ -5,7 +5,7 @@
   "main": "tests.js",
   "scripts": {
     "install": "(npm install webdriverio -g) && (npm install selenium-standalone -g)",
-    "test": "wdio wdio.conf.js",
+    "test": "wdio wdio.conf.js --server=localhost:81",
     "start": "selenium-standalone start"
   },
   "author": "Maciej Mazur",

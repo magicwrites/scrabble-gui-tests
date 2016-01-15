@@ -1,7 +1,7 @@
 describe('when user is not authorized', function () {
     it('should be possible to login properly', function (done) {
         browser
-            .url('http://localhost:81')
+            .url('http://' + process.argv[3].split('=')[1])
             .setViewportSize({ width: 1280, height: 720 })
             .waitForExist('[name="loginForm"] [ng-model="user.userName"]')
             .setValue('[name="loginForm"] [ng-model="user.userName"]', 'admincompany1@future-processing.com')
